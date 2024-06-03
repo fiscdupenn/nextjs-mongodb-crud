@@ -6,7 +6,7 @@ const Tasks = () => {
     const [tasks, setTasks] = React.useState([])
     React.useEffect(() => {
         const loadTasks = async () => {
-            const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/tasks`, {
+            const res = await fetch(`/api/tasks`, {
                 cache: 'no-store'
             })
             if (!res.ok) {
