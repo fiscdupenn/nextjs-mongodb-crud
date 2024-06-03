@@ -11,7 +11,7 @@ export async function GET() {
 
 export async function POST(request) {
   try {
-    await dbConnect
+    await dbConnect();
     const body = await request.json();
     const newTask = new Task(body);
     const savedTask = await newTask.save();
