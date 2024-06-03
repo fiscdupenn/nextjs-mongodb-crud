@@ -1,7 +1,6 @@
 import Task from "@/models/Task";
 import { dbConnect } from "@/utils/mongoose";
 import { NextResponse } from "next/server";
-export const maxDuration = 60;
 
 export async function GET() {
   await dbConnect();
