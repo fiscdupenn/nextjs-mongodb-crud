@@ -9,3 +9,4 @@ cd next-mongodb-app
 npm i
 npm run dev
 ```
+# stats-widget-v1
